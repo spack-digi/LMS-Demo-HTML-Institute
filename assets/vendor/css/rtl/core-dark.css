@@ -20572,8 +20572,9 @@ html:not([dir=rtl]) .menu-horizontal .menu-sub .menu-sub .menu-item .menu-link {
 
 .menu-horizontal-wrapper {
   overflow: hidden;
-  flex: 0 1 100%;
-  width: 0;
+  /* flex: 0 1 100%; */
+  width: auto;
+  margin: auto;
 }
 .menu:not(.menu-no-animation) .menu-horizontal-wrapper .menu-inner {
   transition: margin 0.3s;

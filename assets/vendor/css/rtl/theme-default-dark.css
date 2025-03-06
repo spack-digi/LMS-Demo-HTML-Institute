@@ -111,8 +111,8 @@ a.bg-primary:hover, a.bg-primary:focus {
 .pagination li.active > a:not(.page-link),
 .pagination li.active > a:not(.page-link):hover,
 .pagination li.active > a:not(.page-link):focus {
-  border-color: #5a8dee;
-  background-color: #5a8dee;
+  border-color: #f79e1c;
+  background-color: #f79e1c;
   color: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
@@ -288,14 +288,14 @@ button.list-group-item-primary.active {
 
 .btn-primary, .btn-primary[data-trigger=hover].dropdown-toggle:not(.show) {
   color: #fff;
-  background-color: #5a8dee;
-  border-color: #5a8dee;
+  background-color: #f79e1c;
+  border-color: #f79e1c;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 .btn-primary:hover, .btn-primary[data-trigger=hover].show.dropdown-toggle:hover {
   color: #fff !important;
-  background-color: #7ba4f1 !important;
-  border-color: #7ba4f1 !important;
+  background-color: #f79f1cda !important;
+  border-color: #f79f1cda  !important;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.25) !important;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary.focus {
@@ -437,7 +437,7 @@ button.list-group-item-primary.active {
 }
 
 .nav-pills .nav-link.active, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
-  background-color: #5a8dee;
+  background-color: #f79e1c;
   color: #fff;
 }
 
@@ -484,20 +484,20 @@ button.list-group-item-primary.active {
 
 .form-control:focus,
 .form-select:focus {
-  border-color: #5a8dee !important;
+  border-color: #f79e1c !important;
 }
 
 .input-group:focus-within .form-control,
 .input-group:focus-within .input-group-text {
-  border-color: #5a8dee !important;
+  border-color: #f79e1c !important;
 }
 
 .form-check-input:focus {
   border-color: #5a8dee;
 }
 .form-check-input:checked {
-  background-color: #5a8dee;
-  border-color: #5a8dee;
+  background-color: #f79e1c;
+  border-color: #f79e1c;
 }
 .form-check-input[type=checkbox]:indeterminate {
   background-color: #5a8dee;
@@ -794,7 +794,7 @@ a:hover {
 }
 
 .select2-container--default.select2-container--focus .select2-selection, .select2-container--default.select2-container--open .select2-selection {
-  border-color: #5a8dee !important;
+  border-color: #f79e1c !important;
 }
 
 .select2-primary .select2-container--default .select2-selection--multiple .select2-selection__choice {
@@ -1389,7 +1389,7 @@ li.ui-timepicker-selected,
 }
 
 .layout-horizontal .layout-navbar {
-  background-color: #283144 !important;
+  background-color: #333333 !important;
   box-shadow: 0 1px 0 #36445d;
 }
 
@@ -1417,11 +1417,11 @@ li.ui-timepicker-selected,
   background-color: #5a8dee;
 }
 .bg-menu-theme.menu-horizontal .menu-inner > .menu-item.active > .menu-link {
-  background-color: #5a8dee !important;
+  background-color: #f79e1c !important;
 }
 .bg-menu-theme.menu-horizontal .menu-sub > .menu-item.active > .menu-link:not(.menu-toggle) {
   background-color: transparent !important;
-  color: #fff !important;
+  color: #f79e1c !important;
 }
 .bg-menu-theme .menu-inner > .menu-item.menu-item-closing .menu-item.open .menu-sub,
 .bg-menu-theme .menu-inner > .menu-item.menu-item-closing .menu-item.open .menu-toggle {
@@ -1505,7 +1505,7 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner > .menu-item.open:no
   background-color: #8295ba;
 }
 .bg-menu-theme.menu-horizontal {
-  background-color: #283144 !important;
+  background-color: #333333 !important;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 html:not(.layout-menu-collapsed) .bg-menu-theme.menu-horizontal .menu-inner .menu-item.open:not(.active) > .menu-link, .layout-menu-hover.layout-menu-collapsed .bg-menu-theme.menu-horizontal .menu-inner .menu-item.open:not(.active) > .menu-link,
@@ -1513,7 +1513,8 @@ html:not(.layout-menu-collapsed) .bg-menu-theme.menu-horizontal .menu-inner .men
 .layout-menu-hover.layout-menu-collapsed .bg-menu-theme.menu-horizontal .menu-inner .menu-item:not(.active) .menu-link:hover,
 html:not(.layout-menu-collapsed) .bg-menu-theme.menu-horizontal .menu-inner .menu-item.active .menu-link:not(.menu-toggle):hover,
 .layout-menu-hover.layout-menu-collapsed .bg-menu-theme.menu-horizontal .menu-inner .menu-item.active .menu-link:not(.menu-toggle):hover {
-  background-color: rgba(99, 123, 169, 0.08) !important;
+  /* background-color: rgba(99, 123, 169, 0.08) !important; */
+  background-color: #f79e1c !important;
   color: #d8deea;
 }
 html:not(.layout-menu-collapsed) .bg-menu-theme.menu-horizontal .menu-inner > .menu-item.open:not(.active) {
