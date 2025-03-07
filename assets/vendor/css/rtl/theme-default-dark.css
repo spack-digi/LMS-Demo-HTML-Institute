@@ -1414,7 +1414,7 @@ li.ui-timepicker-selected,
 }
 .bg-menu-theme .menu-item.active > .menu-link:not(.menu-toggle) {
   color: #fff;
-  background-color: #5a8dee;
+  background-color: #f79e1c;
 }
 .bg-menu-theme.menu-horizontal .menu-inner > .menu-item.active > .menu-link {
   background-color: #f79e1c !important;
