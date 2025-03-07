@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Forgot Password | Script Craft</title>
+    <title>Otp Verifications | Script Craft</title>
 
     <meta name="description" content="" />
 
@@ -59,44 +59,58 @@
   <body>
     <!-- Content -->
 
-    <div class="container-xxl">
-      <div class="authentication-wrapper authentication-basic container-p-y">
-        <div class="authentication-inner py-4">
-          <!-- Forgot Password -->
-          <div class="card">
-            <div class="card-body">
-              <!-- Logo -->
-              <div class="app-brand justify-content-center">
-                <a href="../index.html" class="app-brand-link gap-2">
-                  <img src="../../assets/img/logo/logo.png" width="100" height="100" alt="script_craft_logo">
-                </a>
-              </div>
-              <!-- /Logo -->
-              <h4 class="mb-2">Forgot Password? 🔒</h4>
-              <p class="mb-4">Enter your email and we'll send you instructions to reset your password</p>
-              <form id="formAuthentication" class="mb-3" action="otpVerification.html" method="GET">
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    autofocus />
-                </div>
-                <button class="btn btn-primary d-grid w-100">Send Reset Link</button>
-              </form>
-              <div class="text-center">
-                <a href="auth-login.html" class="d-flex align-items-center justify-content-center" style="color: #f79e1c;">
-                  <i class="bx bx-chevron-left scaleX-n1-rtl"></i>
-                  Back to login
-                </a>
-              </div>
+    <div class="authentication-wrapper authentication-basic px-4">
+      <div class="authentication-inner py-4">
+        <!--  Two Steps Verification -->
+        <div class="card">
+          <div class="card-body">
+            <!-- Logo -->
+            <div class="app-brand justify-content-center">
+              <a href="../index.html" class="app-brand-link gap-2">
+                <img src="../../assets/img/logo/logo.png" width="100" height="100" alt="script_craft_logo">
+              </a>
             </div>
+            <!-- /Logo -->
+            <h4 class="mb-2">Two Step Verification 💬</h4>
+            <p class="text-start mb-4">
+              We sent a verification code to your mobile. Enter the code from the mobile in the field below.
+              <span class="fw-medium d-block mt-2">******1234</span>
+            </p>
+            <p class="mb-0 fw-medium">Type your 4 digit security code</p>
+            <form id="twoStepsForm" action="reset-password.html" method="GET">
+              <div class="mb-3">
+                <div
+                  class="auth-input-wrapper d-flex align-items-center justify-content-sm-between numeral-mask-wrapper">
+                  <input
+                    type="tel"
+                    class="form-control auth-input h-px-50 text-center numeral-mask mx-1 my-2"
+                    maxlength="1"
+                    autofocus />
+                  <input
+                    type="tel"
+                    class="form-control auth-input h-px-50 text-center numeral-mask mx-1 my-2"
+                    maxlength="1" />
+                  <input
+                    type="tel"
+                    class="form-control auth-input h-px-50 text-center numeral-mask mx-1 my-2"
+                    maxlength="1" />
+                  <input
+                    type="tel"
+                    class="form-control auth-input h-px-50 text-center numeral-mask mx-1 my-2"
+                    maxlength="1" />
+                </div>
+                <!-- Create a hidden field which is combined by 3 fields above -->
+                <input type="hidden" name="otp" />
+              </div>
+              <button class="btn btn-primary d-grid w-100 mb-3">Verify my account</button>
+              <div class="text-center">
+                Didn't get the code?
+                <a href="javascript:void(0);" style="color: #f79e1c;"> Resend </a>
+              </div>
+            </form>
           </div>
-          <!-- /Forgot Password -->
         </div>
+        <!-- / Two Steps Verification -->
       </div>
     </div>
 
@@ -117,6 +131,7 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="../../assets/vendor/libs/cleavejs/cleave.js"></script>
     <script src="../../assets/vendor/libs/@form-validation/umd/bundle/popular.min.js"></script>
     <script src="../../assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js"></script>
     <script src="../../assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js"></script>
@@ -126,5 +141,6 @@
 
     <!-- Page JS -->
     <script src="../../assets/js/pages-auth.js"></script>
+    <script src="../../assets/js/pages-auth-two-steps.js"></script>
   </body>
 </html>

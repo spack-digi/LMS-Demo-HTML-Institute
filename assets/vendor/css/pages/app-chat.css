@@ -254,9 +254,9 @@
 .light-style .app-chat .app-chat-history .chat-history-body .chat-history .chat-message.chat-message-right {
   justify-content: flex-end;
 }
-.light-style .app-chat .app-chat-history .chat-history-body .chat-history .chat-message.chat-message-right .chat-message-text {
+/* .light-style .app-chat .app-chat-history .chat-history-body .chat-history .chat-message.chat-message-right .chat-message-text {
   color: #fff;
-}
+} */
 .light-style .app-chat .app-chat-sidebar-right {
   background-color: #fff;
   box-shadow: 16px 1px 45px 3px rgba(38, 60, 85, 0.5);
