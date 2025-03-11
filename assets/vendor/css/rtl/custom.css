@@ -1,0 +1,38 @@
+.seat-container {
+    display: grid;
+    grid-template-columns: repeat(8, 55px);
+    gap: 8px;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.seat {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f79e1c;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.seat i {
+    font-size: 20px;
+    color: #333;
+}
+
+.seat.selected {
+    background-color: #f79e1c;
+    color: white;
+}
+
+.seat.absent {
+    background-color: white;
+    border: 2px solid red;
+    color: #000;
+}
