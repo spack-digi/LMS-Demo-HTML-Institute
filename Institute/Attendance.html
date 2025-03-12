@@ -8,7 +8,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Dashboard - Institute | Script Craft</title>
+  <title>Faculty | Script Craft</title>
 
   <meta name="description" content="" />
 
@@ -38,6 +38,8 @@
   <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
 
   <!-- Page CSS -->
+  <link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/select2/select2.css" />
 
   <!-- Helpers -->
   <script src="../assets/vendor/js/helpers.js"></script>
@@ -383,7 +385,7 @@
             <div class="container-xxl d-flex h-100">
               <ul class="menu-inner">
                 <!-- Dashboards -->
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="index.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-home-circle"></i>
                     <div data-i18n="Dashboards">Dashboards</div>
@@ -398,7 +400,7 @@
                   </a>
                 </li>
 
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="Attendance.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-clipboard"></i>
                     <div data-i18n="Attendance">Attendance</div>
@@ -445,7 +447,7 @@
 
                 <!-- Pages -->
                 <li class="menu-item">
-                  <a href="#" class="menu-link">
+                  <a href="CreativeContent.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-collection"></i>
                     <div data-i18n="Creative Contents">Creative Contents</div>
                   </a>
@@ -459,7 +461,259 @@
           <!-- Content -->
 
           <div class="container-xxl flex-grow-1 container-p-y">
+            <h4 class="py-3 breadcrumb-wrapper"><a href="../index.html" class="text-muted fw-light">Home /</a><span
+                class="text-muted fw-light"> Students /</span> Attendance</h4>
+            <div class="card">
+              <div class="d-flex justify-content-between">
+                <div class="card-header d-flex  justify-between">
+                  <select id="selectpickerBasic" class="selectpicker w-100 me-4" data-style="btn-default">
+                    <option>Fillter with Status</option>
+                    <option>Absent</option>
+                    <option>Present</option>
+                    <option>Leave</option>
+                    <option>Half Day</option>
+                    <option>Holiday</option>
+                  </select>
+                  <input class="form-control" type="search" value="Search..." id="html5-search-input" />
+                </div>
+                <div class="card-header">
+                  <button class="dt-button create-new btn btn-primary" tabindex="0" data-bs-toggle="modal"
+                    data-bs-target="#modalToggle" type="button">
+                    <span>
+                      <i class="bx bx-plus me-sm-1"></i>
+                      <span class="d-none d-sm-inline-block">Take
+                        Attendance</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <hr>
+              <div class="table-responsive text-nowrap">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Sl No.</th>
+                      <th>Date</th>
+                      <th>Present</th>
+                      <th>Absent</th>
+                      <th>Leave</th>
+                      <th>Half Day</th>
+                      <th>Holiday</th>
+                      <th>Attendance %</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-border-bottom-0">
+                    <tr>
+                      <td>1</td>
+                      <td>01 March 2025</td>
+                      <td>20</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>90%</td>
+                      <td><i class="fa-solid fa-eye cursor-pointer" data-bs-toggle="modal"
+                          data-bs-target="#modalCenter"></i></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>01 April 2025</td>
+                      <td>18</td>
+                      <td>4</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>85%</td>
+                      <td><i class="fa-solid fa-eye cursor-pointer" data-bs-toggle="modal"
+                          data-bs-target="#modalCenter"></i></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>01 May 2025</td>
+                      <td>22</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>95%</td>
+                      <td><i class="fa-solid fa-eye cursor-pointer" data-bs-toggle="modal"
+                          data-bs-target="#modalCenter"></i></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>01 June 2025</td>
+                      <td>19</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>80%</td>
+                      <td><i class="fa-solid fa-eye cursor-pointer" data-bs-toggle="modal"
+                          data-bs-target="#modalCenter"></i></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>01 July 2025</td>
+                      <td>21</td>
+                      <td>3</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>89%</td>
+                      <td><i class="fa-solid fa-eye cursor-pointer" data-bs-toggle="modal"
+                          data-bs-target="#modalCenter"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
 
+
+                <div class="card-header">
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item prev">
+                        <a class="page-link" href="javascript:void(0);">
+                          <i class="tf-icon bx bx-chevrons-left"></i>
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="javascript:void(0);">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0);">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0);">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0);">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0);">5</a>
+                      </li>
+                      <li class="page-item next">
+                        <a class="page-link" href="javascript:void(0);">
+                          <i class="tf-icon bx bx-chevrons-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Attendance Modal 1-->
+            <div class="modal fade" id="modalToggle" aria-labelledby="modalToggleLabel" tabindex="-1"
+              style="display: none" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalToggleLabel">Modal 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label for="selectpickerBasic" class="form-label">Select Class</label>
+                          <select id="selectpickerBasic" class="selectpicker w-100" data-style="btn-default">
+                            <option>Select Class</option>
+                            <option>Rocky</option>
+                            <option>Pulp Fiction</option>
+                            <option>The Godfather</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-6">
+                          <label for="selectpickerBasic" class="form-label">Select Class</label>
+                          <select id="selectpickerBasic" class="selectpicker w-100" data-style="btn-default">
+                            <option>Select Section</option>
+                            <option>Rocky</option>
+                            <option>Pulp Fiction</option>
+                            <option>The Godfather</option>
+                          </select>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#modalToggle2" data-bs-toggle="modal"
+                      data-bs-dismiss="modal">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Attendance Modal 2-->
+            <div class="modal fade" id="modalToggle2" aria-hidden="true" aria-labelledby="modalToggleLabel2"
+              tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalToggleLabel2">Modal 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="seat-container"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" id="submitAttendance">Submit Attendance</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- View Modal -->
+            <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalCenterTitle">Attendance Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col mb-3">
+                        <label for="month" class="form-label">Month</label>
+                        <input type="text" id="month" class="form-control" readonly value="01 March 2025" />
+                      </div>
+                    </div>
+                    <div class="row g-2">
+                      <div class="col mb-0">
+                        <label for="present" class="form-label">Present</label>
+                        <input type="number" id="present" class="form-control" readonly value="20" />
+                      </div>
+                      <div class="col mb-0">
+                        <label for="absent" class="form-label">Absent</label>
+                        <input type="number" id="absent" class="form-control" readonly value="2" />
+                      </div>
+                    </div>
+                    <div class="row g-2">
+                      <div class="col mb-0">
+                        <label for="leave" class="form-label">Leave</label>
+                        <input type="number" id="leave" class="form-control" readonly value="1" />
+                      </div>
+                      <div class="col mb-0">
+                        <label for="halfday" class="form-label">Half Day</label>
+                        <input type="number" id="halfday" class="form-control" readonly value="1" />
+                      </div>
+                    </div>
+                    <div class="row g-2">
+                      <div class="col mb-0">
+                        <label for="holiday" class="form-label">Holiday</label>
+                        <input type="number" id="holiday" class="form-control" readonly value="1" />
+                      </div>
+                      <div class="col mb-0">
+                        <label for="attendance" class="form-label">Attendance %</label>
+                        <input type="text" id="attendance" class="form-control" readonly value="90%" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!--/ Content -->
 
@@ -519,6 +773,8 @@
 
   <!-- Page JS -->
   <script src="../assets/js/app-academy-dashboard.js"></script>
+  <script src="../../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+  <script src="../../assets/js/forms-selects.js"></script>
 
 </body>
 

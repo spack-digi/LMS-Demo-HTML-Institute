@@ -12,3 +12,20 @@ document.getElementById("selectType").addEventListener("change", function () {
   }
 });
 
+// class toggle section
+
+function toggleSection() {
+  var singleSection = document.getElementById("singleSection");
+  var multipleSection = document.getElementById("multiSection");
+  var selectedValue = document.querySelector(
+    `input[name="collapsible-payment"]:checked`
+  ).value;
+
+  if (selectedValue === "single") {
+    singleSection.style.display = "block";
+    multipleSection.style.display = "none";
+  } else {
+    singleSection.style.display = "none";
+    multiSection.style.display = "block";
+  }
+}
