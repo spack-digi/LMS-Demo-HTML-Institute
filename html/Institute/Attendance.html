@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default"
-  data-assets-path="../../../assets/" data-template="horizontal-menu-template">
+  data-assets-path="../../assets/" data-template="horizontal-menu-template">
 
 <head>
   <meta charset="utf-8" />
@@ -42,7 +42,6 @@
   <link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
   <link rel="stylesheet" href="../../assets/vendor/libs/select2/select2.css" />
 
-
   <!-- Helpers -->
   <script src="../../assets/vendor/js/helpers.js"></script>
   <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -50,7 +49,6 @@
   <script src="../../assets/vendor/js/template-customizer.js"></script>
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="../../assets/js/config.js"></script>
-
 </head>
 
 <body>
@@ -62,8 +60,8 @@
       <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
         <div class="container-xxl">
           <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
-            <a href="../index.html" class="app-brand-link gap-2">
-              <img src="../../assets/img/logo/logo.png" width="60" height="60" alt="script_craft_logo">
+            <a href="index.html" class="app-brand-link gap-2">
+              <img src="../../assets/img/logo/logo.png" alt="script_craft_logo" width="60" height="60" />
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
@@ -109,7 +107,7 @@
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown"
                   data-bs-auto-close="outside" aria-expanded="false">
                   <i class="bx bx-bell bx-sm"></i>
-                  <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                  <span class="badge bg-danger rounded-pill badge-notifications">0</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end py-0">
                   <li class="dropdown-menu-header border-bottom">
@@ -122,186 +120,8 @@
                   <li class="dropdown-notifications-list scrollable-container">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <img src="../../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
-                            <p class="mb-0">Won the monthly best seller gold badge</p>
-                            <small class="text-muted">1h ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <span class="avatar-initial rounded-circle bg-label-danger">CF</span>
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">Charles Franklin</h6>
-                            <p class="mb-0">Accepted your connection</p>
-                            <small class="text-muted">12hr ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <img src="../../../assets/img/avatars/2.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">New Message ✉️</h6>
-                            <p class="mb-0">You have new message from Natalie</p>
-                            <small class="text-muted">1h ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <span class="avatar-initial rounded-circle bg-label-success"><i
-                                  class="bx bx-cart"></i></span>
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">Whoo! You have new order 🛒</h6>
-                            <p class="mb-0">ACME Inc. made new order $1,154</p>
-                            <small class="text-muted">1 day ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <img src="../../../assets/img/avatars/9.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">Application has been approved 🚀</h6>
-                            <p class="mb-0">Your ABC project application has been approved.</p>
-                            <small class="text-muted">2 days ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <span class="avatar-initial rounded-circle bg-label-success"><i
-                                  class="bx bx-pie-chart-alt"></i></span>
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">Monthly report is generated</h6>
-                            <p class="mb-0">July monthly financial report is generated</p>
-                            <small class="text-muted">3 days ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <img src="../../../assets/img/avatars/5.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">Send connection request</h6>
-                            <p class="mb-0">Peter sent you connection request</p>
-                            <small class="text-muted">4 days ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <img src="../../../assets/img/avatars/6.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">New message from Jane</h6>
-                            <p class="mb-0">Your have new message from Jane</p>
-                            <small class="text-muted">5 days ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar">
-                              <span class="avatar-initial rounded-circle bg-label-warning"><i
-                                  class="bx bx-error"></i></span>
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <h6 class="mb-1">CPU is running high</h6>
-                            <p class="mb-0">CPU Utilization Percent is currently at 88.63%,</p>
-                            <small class="text-muted">5 days ago</small>
-                          </div>
-                          <div class="flex-shrink-0 dropdown-notifications-actions">
-                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
-                                class="badge badge-dot"></span></a>
-                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
-                                class="bx bx-x"></span></a>
-                          </div>
+                        <div class="d-flex justify-content-center">
+                          <h6 class="mb-1">No New Notification</h6>
                         </div>
                       </li>
                     </ul>
@@ -319,20 +139,20 @@
               <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                   <div class="avatar  me-2 avatar-online">
-                    <span class="avatar-initial rounded-circle bg-label-primary">JD</span>
+                    <span class="avatar-initial rounded-circle bg-label-primary">YM</span>
                   </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a class="dropdown-item" href="profile-user.html">
+                    <a class="dropdown-item" href="#">
                       <div class="d-flex">
                         <div class="flex-shrink-0 me-3">
                           <div class="avatar me-2">
-                            <span class="avatar-initial rounded-circle bg-label-primary">JD</span>
+                            <span class="avatar-initial rounded-circle bg-label-primary">YM</span>
                           </div>
                         </div>
                         <div class="flex-grow-1">
-                          <span class="fw-medium d-block lh-1">John Doe</span>
+                          <span class="fw-medium d-block lh-1">Yakoob Mood</span>
                           <small>Institue Admin</small>
                         </div>
                       </div>
@@ -342,13 +162,13 @@
                     <div class="dropdown-divider"></div>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="profile-user.html">
+                    <a class="dropdown-item" href="#">
                       <i class="bx bx-user me-2"></i>
                       <span class="align-middle">My Profile</span>
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="account-settings.html">
+                    <a class="dropdown-item" href="#">
                       <i class="bx bx-cog me-2"></i>
                       <span class="align-middle">Settings</span>
                     </a>
@@ -389,75 +209,74 @@
               <ul class="menu-inner">
                 <!-- Dashboards -->
                 <li class="menu-item">
-                    <a href="index.html" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                        <div data-i18n="Dashboards">Dashboards</div>
-                    </a>
+                  <a href="index.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                    <div data-i18n="Dashboards">Dashboards</div>
+                  </a>
                 </li>
 
                 <!-- Pages -->
                 <li class="menu-item">
-                    <a href="../Faculty.html" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-user"></i>
-                        <div data-i18n="Faculty">Faculty</div>
-                    </a>
+                  <a href="./Faculty/Faculty.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-user"></i>
+                    <div data-i18n="Faculty">Faculty</div>
+                  </a>
                 </li>
 
-                <li class="menu-item">
-                    <a href="../Attendance.html" class="menu-link">
-                      <i class="menu-icon tf-icons bx bx-clipboard"></i>
-                      <div data-i18n="Attendance">Attendance</div>
-                    </a>
-                  </li>
-  
+                <li class="menu-item active">
+                  <a href="Attendance.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-clipboard"></i>
+                    <div data-i18n="Attendance">Attendance</div>
+                  </a>
+                </li>
 
                 <!-- Apps -->
-                <li class="menu-item active">
-                    <a href="javascript:void(0)" class="menu-link menu-toggle">
-                        <i class="menu-icon fa-solid fa-users"></i>
+                <li class="menu-item">
+                  <a href="javascript:void(0)" class="menu-link menu-toggle">
+                    <i class="menu-icon fa-solid fa-users"></i>
+                    <div data-i18n="Students">Students</div>
+                  </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="./Students/AllStudents.html" class="menu-link">
                         <div data-i18n="Students">Students</div>
-                    </a>
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="AllStudents.html" class="menu-link">
-                                <div data-i18n="Students">Students</div>
-                            </a>
-                        </li>
-                        <li class="menu-item active">
-                            <a href="Attendance.html" class="menu-link">
-                                <div data-i18n="Attendance">Attendance</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="ProgressReport.html" class="menu-link">
-                                <div data-i18n="Progress Report">Progress Report</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">
-                                <div data-i18n="Performance Report">Performance Report</div>
-                            </a>
-                        </li>
-                    </ul>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./Students/Attendance.html" class="menu-link">
+                        <div data-i18n="Attendance">Attendance</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./Students/ProgressReport.html" class="menu-link">
+                        <div data-i18n="Progress Report">Progress Report</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./Students/PerformanceReport.html" class="menu-link">
+                        <div data-i18n="Performance Report">Performance Report</div>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
 
                 <!-- Pages -->
                 <li class="menu-item">
-                    <a href="../Class-Section/ClassSection.html" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-book-open"></i>
-                        <div data-i18n="Class & Section">Class & Sections</div>
-                    </a>
+                  <a href="./Class-Section/ClassSection.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-book-open"></i>
+                    <div data-i18n="Class & Section">Class & Sections</div>
+                  </a>
                 </li>
 
                 <!-- Pages -->
                 <li class="menu-item">
-                    <a href="../CreativeContent.html" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Creative Contents">Creative Contents</div>
-                    </a>
+                  <a href="CreativeContent.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-collection"></i>
+                    <div data-i18n="Creative Contents">Creative Contents</div>
+                  </a>
                 </li>
 
-            </ul>
+              </ul>
             </div>
           </aside>
           <!-- / Menu -->
@@ -465,8 +284,7 @@
           <!-- Content -->
 
           <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="py-3 breadcrumb-wrapper"><a href="../index.html" class="text-muted fw-light">Home /</a><span
-                class="text-muted fw-light"> Students /</span> Attendance</h4>
+            <h4 class="py-3 breadcrumb-wrapper"><a href="../index.html" class="text-muted fw-light">Home /</a> Attendance</h4>
             <div class="card">
               <div class="d-flex justify-content-between">
                 <div class="card-header d-flex  justify-between">
@@ -522,7 +340,7 @@
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>02 March 2025</td>
+                      <td>01 April 2025</td>
                       <td>18</td>
                       <td>4</td>
                       <td>2</td>
@@ -534,7 +352,7 @@
                     </tr>
                     <tr>
                       <td>3</td>
-                      <td>03 March 2025</td>
+                      <td>01 May 2025</td>
                       <td>22</td>
                       <td>1</td>
                       <td>1</td>
@@ -546,7 +364,7 @@
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td>04 March 2025</td>
+                      <td>01 June 2025</td>
                       <td>19</td>
                       <td>5</td>
                       <td>2</td>
@@ -558,7 +376,7 @@
                     </tr>
                     <tr>
                       <td>5</td>
-                      <td>05 March 2025</td>
+                      <td>01 July 2025</td>
                       <td>21</td>
                       <td>3</td>
                       <td>1</td>
@@ -756,97 +574,31 @@
   <!-- Core JS -->
   <!-- build:js assets/vendor/js/core.js -->
 
-  <script src="../../../assets/vendor/libs/jquery/jquery.js"></script>
-  <script src="../../../assets/vendor/libs/popper/popper.js"></script>
-  <script src="../../../assets/vendor/js/bootstrap.js"></script>
-  <script src="../../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-  <script src="../../../assets/vendor/libs/hammer/hammer.js"></script>
-  <script src="../../../assets/vendor/libs/i18n/i18n.js"></script>
-  <script src="../../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
-  <script src="../../../assets/vendor/js/menu.js"></script>
+  <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="../../assets/vendor/libs/popper/popper.js"></script>
+  <script src="../../assets/vendor/js/bootstrap.js"></script>
+  <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="../../assets/vendor/libs/hammer/hammer.js"></script>
+  <script src="../../assets/vendor/libs/i18n/i18n.js"></script>
+  <script src="../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="../../assets/vendor/js/menu.js"></script>
 
   <!-- endbuild -->
 
   <!-- Vendors JS -->
-  <script src="../../../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+  <script src="../../assets/vendor/libs/moment/moment.js"></script>
+  <script src="../../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+  <script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
 
   <!-- Main JS -->
-  <script src="../../../assets/js/main.js"></script>
-
-  <!-- Page JS -->
-  <!-- Page JS -->
-  <script src="../../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
-  <script src="../../assets/js/forms-selects.js"></script>
+  <script src="../../assets/js/main.js"></script>
   <script src="../../assets/vendor/js/custom.js"></script>
 
-  <script>
-    // Take Attendance
-    document.addEventListener("DOMContentLoaded", () => {
-      const container = document.querySelector(".seat-container");
-      const submitBtn = document.getElementById("submitAttendance");
+  <!-- Page JS -->
+  <script src="../../assets/js/app-academy-dashboard.js"></script>
+  <script src="../../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+  <script src="../../assets/js/forms-selects.js"></script>
 
-      const rows = 5;
-      const cols = 10;
-      const totalSeats = rows * cols;
-
-      // Generate student seats dynamically
-      if (container.children.length === 0) {
-        for (let i = 0; i < totalSeats; i++) {
-          const seat = document.createElement("div");
-          seat.classList.add("seat");
-
-          // Font Awesome User Icon
-          const icon = document.createElement("i");
-          icon.classList.add("fas", "fa-user");
-
-          // Roll Number
-          const rollNumber = document.createElement("span");
-          rollNumber.textContent = i + 1;
-
-          seat.appendChild(icon);
-          seat.appendChild(rollNumber);
-
-          seat.addEventListener("click", () => toggleAttendance(seat));
-          container.appendChild(seat);
-        }
-      }
-
-      function toggleAttendance(seat) {
-        if (seat.classList.contains("selected")) {
-          seat.classList.remove("selected");
-        } else {
-          seat.classList.add("selected");
-        }
-      }
-
-      submitBtn.addEventListener("click", () => {
-        const selectedSeats = [];
-
-        document.querySelectorAll(".seat.selected").forEach((seat) => {
-          selectedSeats.push(seat.querySelector("span").textContent);
-        });
-
-        // Mark unselected seats as absent
-        document.querySelectorAll(".seat").forEach((seat) => {
-          const rollNumber = seat.querySelector("span").textContent;
-          if (!selectedSeats.includes(rollNumber)) {
-            seat.classList.add("absent");
-          } else {
-            seat.classList.remove("absent"); // Keep selected ones as present
-          }
-        });
-
-        console.log("Present Students:", selectedSeats.join(", "));
-        console.log(
-          "Absent Students:",
-          [...document.querySelectorAll(".seat.absent")]
-            .map((seat) => seat.querySelector("span").textContent)
-            .join(", ")
-        );
-      });
-    });
-
-  </script>
 </body>
 
 </html>
