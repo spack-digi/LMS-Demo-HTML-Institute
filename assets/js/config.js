@@ -37,7 +37,7 @@ let config = {
   },
   colors_dark: {
     cardColor: '#283144',
-    bodyBg: '#1c222f',
+    bodyBg: '#333333',
     bodyColor: '#a1b0cb',
     headingColor: '#d8deea',
     textMuted: '#8295ba',
@@ -91,10 +91,10 @@ if (typeof TemplateCustomizer !== 'undefined') {
   window.templateCustomizer = new TemplateCustomizer({
     cssPath: assetsPath + 'vendor/css' + (rtlSupport ? '/rtl' : '') + '/',
     themesPath: assetsPath + 'vendor/css' + (rtlSupport ? '/rtl' : '') + '/',
-    displayCustomizer: true,
+    displayCustomizer: false,
     lang: localStorage.getItem('templateCustomizer-' + templateName + '--Lang') || 'en', // Set default language here
     // defaultTheme: 2,
-    // defaultStyle: 'system',
+    defaultStyle: 'dark',
     // defaultTextDir: 'rtl',
     // defaultContentLayout: 'wide',
     // defaultHeaderType: 'static',

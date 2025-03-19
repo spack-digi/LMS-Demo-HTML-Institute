@@ -71,7 +71,7 @@
   --bs-body-line-height: 1.47;
   --bs-body-color: #a1b0cb;
   --bs-body-color-rgb: 161, 176, 203;
-  --bs-body-bg: #1c222f;
+  --bs-body-bg: #000000;
   --bs-body-bg-rgb: 28, 34, 47;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -131,7 +131,7 @@
   }
 }
 
-body {
+/* body {
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -142,7 +142,38 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+} */
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/Background/bg2.jpg');
+  background-size: cover;  /* or 'cover' */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;  /* Watermark effect */
+  pointer-events: none; /* Prevent interaction issues */
+  z-index: -1; /* Keep it behind content */
+}
+
+
 
 hr {
   margin: 1rem 0;
@@ -2019,6 +2050,7 @@ progress {
   margin-bottom: 0.25rem;
   font-size: 0.75rem;
   font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .col-form-label {
@@ -2055,11 +2087,11 @@ progress {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.4;
-  color: #a1b0cb;
+  color: rgba(255, 255, 255, 0.5);
   appearance: none;
-  background-color: #283144;
+  background-color: #000000;
   background-clip: padding-box;
-  border: var(--bs-border-width) solid #546990;
+  border: var(--bs-border-width) solid rgba(255, 255, 255, 0.3);
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2075,8 +2107,8 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #a1b0cb;
-  background-color: #283144;
+  color: #fff;
+  /* background-color: #283144; */
   border-color: white;
   outline: 0;
   box-shadow: 0 0.0625rem 0.1875rem 0 rgba(99, 123, 169, 0.18);
@@ -2091,7 +2123,7 @@ progress {
   padding: 0;
 }
 .form-control::placeholder {
-  color: #8295ba;
+  color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 .form-control:disabled {
@@ -2205,14 +2237,14 @@ textarea.form-control-lg {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.4;
-  color: #a1b0cb;
+  color: rgba(255, 255, 255, 0.5);
   appearance: none;
-  background-color: #283144;
+  background-color: #000000;
   background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
   background-repeat: no-repeat;
   background-position: right 0.735rem center;
   background-size: 17px 12px;
-  border: var(--bs-border-width) solid #546990;
+  border: var(--bs-border-width) solid rgba(255, 255, 255, 0.3);
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2278,7 +2310,7 @@ textarea.form-control-lg {
 }
 
 .form-check-input {
-  --bs-form-check-bg: #283144;
+  --bs-form-check-bg: #000000;
   flex-shrink: 0;
   width: 1.2em;
   height: 1.2em;
@@ -2290,7 +2322,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid #546990;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
@@ -2594,8 +2626,8 @@ textarea.form-control-lg {
   color: #a1b0cb;
   text-align: center;
   white-space: nowrap;
-  background-color: #283144;
-  border: var(--bs-border-width) solid #546990;
+  background-color: #000;
+  border: var(--bs-border-width) solid rgba(255, 255, 255, 0.3);
   border-radius: var(--bs-border-radius);
 }
 
@@ -3790,7 +3822,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #283144;
+  --bs-card-bg: #404040;
   --bs-card-img-overlay-padding: 1.5rem;
   --bs-card-group-margin: 0.8125rem;
   position: relative;
@@ -10072,14 +10104,14 @@ html:not([dir=rtl]) .pagination.pagination-lg .page-item:not(.first) ~ .page-ite
   transition: all 0.25s ease;
 }
 .form-control:hover:not([disabled]):not([focus]) {
-  border-color: #8295ba;
+  border-color: #fdac41;
 }
 
 .form-select {
   background-clip: padding-box;
 }
 .form-select:hover:not([disabled]):not([focus]) {
-  border-color: #8295ba;
+  border-color: #fdac41;
 }
 
 [dir=rtl] .form-select {
@@ -10306,7 +10338,7 @@ select.form-select option {
 }
 .input-group:hover .input-group-text,
 .input-group:hover .form-control {
-  border-color: #8295ba;
+  border-color: #fdac41;
 }
 .input-group:focus-within {
   box-shadow: 0 0.0625rem 0.1875rem 0 rgba(99, 123, 169, 0.18);
@@ -13873,7 +13905,7 @@ html:not(.dark-style) .toast.bs-toast .toast-header:not([class*=bg-]) .btn-close
 
 .bg-body {
   --bs-bg-opacity: 1;
-  background-color: #1c222f !important;
+  background-color: #000 !important;
 }
 
 .bg-transparent {

@@ -269,7 +269,7 @@
 
 .dark-style .app-chat .app-chat-contacts,
 .dark-style .app-chat .app-chat-sidebar-left {
-  background-color: #283144;
+  background-color: #404040;
 }
 .dark-style .app-chat .app-chat-contacts .chat-actions .chat-search-input,
 .dark-style .app-chat .app-chat-sidebar-left .chat-actions .chat-search-input {
@@ -291,7 +291,7 @@
 }
 .dark-style .app-chat .app-chat-history .chat-history-header,
 .dark-style .app-chat .app-chat-history .chat-history-footer {
-  background-color: #283144;
+  background-color: #404040;
 }
 .dark-style .app-chat .app-chat-history .chat-history-body .chat-history .chat-message .chat-message-text {
   background-color: #283144;
@@ -301,7 +301,7 @@
   justify-content: flex-end;
 }
 .dark-style .app-chat .app-chat-history .chat-history-body .chat-history .chat-message.chat-message-right .chat-message-text {
-  color: #fff;
+  /* color: #fff; */
 }
 .dark-style .app-chat .app-chat-sidebar-right {
   background-color: #283144;

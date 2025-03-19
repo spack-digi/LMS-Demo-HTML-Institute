@@ -66,9 +66,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-body {
+/* body {
   background: #1c222f;
-}
+} */
 
 .bg-body {
   background: #1c222f !important;
@@ -300,14 +300,14 @@ button.list-group-item-primary.active {
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #4d78ca;
-  border-color: #4d78ca;
+  background-color: #f79e1c;
+  border-color: #f79e1c;
   box-shadow: none;
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .btn-primary.show.dropdown-toggle, .show > .btn-primary.dropdown-toggle {
   color: #fff !important;
-  background-color: #4d78ca !important;
-  border-color: #4d78ca !important;
+  background-color: #f79e1c !important;
+  border-color: #f79e1c !important;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .btn-primary.show.dropdown-toggle:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: none;
@@ -1302,10 +1302,10 @@ li.ui-timepicker-selected,
 }
 
 .app-chat .sidebar-body .chat-contact-list li.active {
-  background-color: #5a8dee;
+  background-color: #f79e1c;
 }
 .app-chat .app-chat-history .chat-history .chat-message.chat-message-right .chat-message-text {
-  background-color: #FFFFFF !important;
+  /* background-color: #FFFFFF !important; */
 }
 
 .navbar.landing-navbar .navbar-nav .show > .nav-link,
@@ -1539,7 +1539,7 @@ html:not(.layout-menu-collapsed) .bg-menu-theme.menu-horizontal .menu-inner > .m
 }
 
 .bg-footer-theme {
-  background-color: #1c222f !important;
+  /* background-color: #1c222f !important; */
   color: #a1b0cb;
 }
 .bg-footer-theme .footer-link {
