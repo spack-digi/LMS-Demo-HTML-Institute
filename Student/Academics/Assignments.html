@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="../../assets/vendor/libs/apex-charts/apex-charts.css" />
 
   <!-- Page CSS -->
+   <link rel="stylesheet" href="../../assets/vendor/css/rtl/custom.css">
 
   <!-- Helpers -->
   <script src="../../assets/vendor/js/helpers.js"></script>
@@ -320,8 +321,7 @@
                     <tr>
                       <th>Sl No.</th>
                       <th>Date</th>
-                      <th>Subject</th>
-                      <th>Teacher</th>
+                      <th>Teacher and Subject</th>
                       <th>Title</th>
                       <th>Note</th>
                       <th>Due Date</th>
@@ -333,10 +333,21 @@
                     <tr>
                       <td>1</td>
                       <td>2025-03-05</td>
-                      <td>Mathematics</td>
-                      <td>Ravi Sharma</td>
+                      <td>
+                        <div class="d-flex justify-content-start align-items-center user-name">
+                          <div class="avatar-wrapper">
+                              <div class="avatar me-2"><span
+                                      class="avatar-initial rounded-circle bg-label-danger">RS</span>
+                              </div>
+                          </div>
+                          <div class="d-flex flex-column"><span
+                                  class="emp_name text-truncate">Ravi Sharma</span><small
+                                  class="emp_post text-truncate text-muted">Mathematics</small>
+                          </div>
+                      </div>
+                      </td>
                       <td>Introduction to Algebra</td>
-                      <td>Assignment on solving equations</td>
+                      <td class="truncate">Assignment on solving equations</td>
                       <td>2025-03-10</td>
                       <td><span class="badge rounded-pill bg-label-primary">Assigned</span></td>
                       <td class="text-center">
@@ -348,10 +359,21 @@
                     <tr>
                       <td>2</td>
                       <td>2025-03-04</td>
-                      <td>Physics</td>
-                      <td>Neha Iyer</td>
+                      <td>
+                        <div class="d-flex justify-content-start align-items-center user-name">
+                          <div class="avatar-wrapper">
+                              <div class="avatar me-2"><span
+                                      class="avatar-initial rounded-circle bg-label-primary">NI</span>
+                              </div>
+                          </div>
+                          <div class="d-flex flex-column"><span
+                                  class="emp_name text-truncate">Neha Iyer</span><small
+                                  class="emp_post text-truncate text-muted">Physics</small>
+                          </div>
+                      </div>
+                      </td>
                       <td>Laws of Motion</td>
-                      <td>Assignment on force and motion</td>
+                      <td class="truncate">Assignment on force and motion</td>
                       <td>2025-03-11</td>
                       <td><span class="badge rounded-pill bg-label-success">Completed</span></td>
                       <td class="text-center">
@@ -363,10 +385,21 @@
                     <tr>
                       <td>3</td>
                       <td>2025-03-03</td>
-                      <td>Chemistry</td>
-                      <td>Amit Verma</td>
+                      <td>
+                        <div class="d-flex justify-content-start align-items-center user-name">
+                          <div class="avatar-wrapper">
+                              <div class="avatar me-2"><span
+                                      class="avatar-initial rounded-circle bg-label-primary">AV</span>
+                              </div>
+                          </div>
+                          <div class="d-flex flex-column"><span
+                                  class="emp_name text-truncate">Amit Verma</span><small
+                                  class="emp_post text-truncate text-muted">Chemistry</small>
+                          </div>
+                      </div>
+                      </td>
                       <td>Periodic Table and Elements</td>
-                      <td>Homework on elements and their properties</td>
+                      <td class="truncate">Homework on elements and their properties</td>
                       <td>2025-03-09</td>
                       <td><span class="badge rounded-pill bg-label-warning">Pending</span></td>
                       <td class="text-center">

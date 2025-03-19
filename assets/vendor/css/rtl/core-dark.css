@@ -2127,7 +2127,7 @@ progress {
   opacity: 1;
 }
 .form-control:disabled {
-  background-color: #36445d;
+  background-color: #a2a1a1;
   opacity: 1;
 }
 .form-control::file-selector-button {
@@ -3888,7 +3888,7 @@ textarea.form-control-lg {
 .card-header {
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
   margin-bottom: 0;
-  color: var(--bs-card-cap-color);
+  /* color: var(--bs-card-cap-color); */
   background-color: var(--bs-card-cap-bg);
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
@@ -7248,9 +7248,9 @@ label.btn {
 }
 
 .btn-label-secondary {
-  color: #69809a;
+  color: #ffffff;
   border-color: transparent;
-  background: #323e52;
+  background: #c3c4c7;
 }
 .btn-label-secondary:hover {
   border-color: transparent !important;
