@@ -70,9 +70,9 @@
   background: #1c222f;
 } */
 
-.bg-body {
+/* .bg-body {
   background: #1c222f !important;
-}
+} */
 
 .text-primary {
   color: #5a8dee !important;
@@ -419,7 +419,7 @@ button.list-group-item-primary.active {
 .dropdown-item:not(.disabled).active,
 .dropdown-item:not(.disabled):active {
   background-color: rgba(90, 141, 238, 0.08);
-  color: #5a8dee !important;
+  color: #f79e1c !important;
 }
 
 .dropdown-menu > li:not(.disabled) > a:not(.dropdown-item):active,
@@ -818,10 +818,10 @@ table.dataTable.dtr-column > tbody > tr > th.control:before {
 
 .bootstrap-select .dropdown-menu.inner a[aria-selected=true] {
   background: rgba(90, 141, 238, 0.08) !important;
-  color: #5a8dee !important;
+  color: #f79e1c !important;
 }
 .bootstrap-select .dropdown-toggle.show {
-  border-color: #5a8dee;
+  /* border-color: #5a8dee; */
 }
 
 .datepicker table tr td.active, .datepicker table tr td.active.highlighted,

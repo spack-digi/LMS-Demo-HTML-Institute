@@ -2708,7 +2708,7 @@ textarea.form-control-lg {
   user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
-  background-color: var(--bs-btn-bg);
+  background-color: #000;
   transition: all 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2718,7 +2718,7 @@ textarea.form-control-lg {
 }
 .btn:hover {
   color: var(--bs-btn-hover-color);
-  background-color: var(--bs-btn-hover-bg);
+  /* background-color: var(--bs-btn-hover-bg); */
   border-color: var(--bs-btn-hover-border-color);
 }
 .btn-check + .btn:hover {
@@ -2740,7 +2740,7 @@ textarea.form-control-lg {
 }
 .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
   color: var(--bs-btn-active-color);
-  background-color: var(--bs-btn-active-bg);
+  /* background-color: var(--bs-btn-active-bg); */
   border-color: var(--bs-btn-active-border-color);
 }
 .btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
@@ -2874,7 +2874,7 @@ textarea.form-control-lg {
   --bs-dropdown-box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.25);
   --bs-dropdown-link-color: #a1b0cb;
   --bs-dropdown-link-hover-color: #a1b0cb;
-  --bs-dropdown-link-hover-bg: rgba(99, 123, 169, 0.08);
+  --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.2);
   --bs-dropdown-link-active-color: #5a8dee;
   --bs-dropdown-link-active-bg: rgba(90, 141, 238, 0.08);
   --bs-dropdown-link-disabled-color: #8295ba;
@@ -2893,7 +2893,7 @@ textarea.form-control-lg {
   color: var(--bs-dropdown-color);
   text-align: left;
   list-style: none;
-  background-color: var(--bs-dropdown-bg);
+  background-color:#000;
   background-clip: padding-box;
   border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
   border-radius: var(--bs-dropdown-border-radius);
@@ -4910,7 +4910,7 @@ textarea.form-control-lg {
   --bs-modal-padding: 1.5rem;
   --bs-modal-margin: 1.5rem;
   --bs-modal-color: ;
-  --bs-modal-bg: #283144;
+  --bs-modal-bg: #404040;
   --bs-modal-border-color: var(--bs-border-color-translucent);
   --bs-modal-border-width: 0px;
   --bs-modal-border-radius: var(--bs-border-radius-lg);
@@ -10734,7 +10734,7 @@ form select.selectpicker.is-invalid ~ .btn {
 }
 
 .modal .btn-close {
-  background-color: rgba(99, 123, 169, 0.16);
+  background-color: #000;
   padding: 0.5625rem 0.5625rem;
   margin: 0 0 0 auto;
   z-index: 1;

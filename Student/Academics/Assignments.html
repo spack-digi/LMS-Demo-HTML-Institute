@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
   <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" />
   <link rel="stylesheet" href="../../assets/vendor/libs/apex-charts/apex-charts.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
 
   <!-- Page CSS -->
    <link rel="stylesheet" href="../../assets/vendor/css/rtl/custom.css">
@@ -308,7 +309,16 @@
             <div class="card">
               <div class="d-flex justify-content-between">
                 <div class="card-header">
-                  <input class="form-control" type="search" value="Search ..." id="html5-search-input" />
+                  <select
+                  id="selectType"
+                  class="selectpicker w-100"
+                  data-style="btn-default"
+                >
+                  <option value="">Select Subject</option>
+                  <option value="text">Text</option>
+                  <option value="link">Link</option>
+                  <option value="file">File</option>
+                </select>
                 </div>
                 <div class="card-header">
                   <input class="form-control" type="date" id="html5-date-input" />
@@ -323,7 +333,6 @@
                       <th>Date</th>
                       <th>Teacher and Subject</th>
                       <th>Title</th>
-                      <th>Note</th>
                       <th>Due Date</th>
                       <th>Status</th>
                       <th class="text-center">Action</th>
@@ -347,7 +356,6 @@
                       </div>
                       </td>
                       <td>Introduction to Algebra</td>
-                      <td class="truncate">Assignment on solving equations</td>
                       <td>2025-03-10</td>
                       <td><span class="badge rounded-pill bg-label-primary">Assigned</span></td>
                       <td class="text-center">
@@ -373,7 +381,6 @@
                       </div>
                       </td>
                       <td>Laws of Motion</td>
-                      <td class="truncate">Assignment on force and motion</td>
                       <td>2025-03-11</td>
                       <td><span class="badge rounded-pill bg-label-success">Completed</span></td>
                       <td class="text-center">
@@ -399,7 +406,6 @@
                       </div>
                       </td>
                       <td>Periodic Table and Elements</td>
-                      <td class="truncate">Homework on elements and their properties</td>
                       <td>2025-03-09</td>
                       <td><span class="badge rounded-pill bg-label-warning">Pending</span></td>
                       <td class="text-center">
@@ -502,7 +508,7 @@
   <script src="../../assets/js/main.js"></script>
 
   <!-- Page JS -->
-  <script src="../../assets/js/dashboards-analytics.js"></script>
+  <script src="../../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
 </body>
 
 </html>

@@ -555,11 +555,11 @@ html[class] .bootstrap-select.form-select {
   background-color: #283144;
 }
 .dark-style .bootstrap-select .dropdown-toggle {
-  border: var(--bs-border-width) solid #546990;
+  border: var(--bs-border-width) solid rgba(255, 255, 255, 0.5);
   border-radius: 0.25rem;
 }
 .dark-style .bootstrap-select .dropdown-toggle:not(.show):hover {
-  border-color: #8295ba;
+  border-color: #d6dae1;
 }
 .dark-style .bootstrap-select .dropdown-menu .dropdown-header {
   color: #d8deea;

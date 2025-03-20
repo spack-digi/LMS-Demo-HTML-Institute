@@ -51,6 +51,7 @@
       class="template-customizer-theme-css"
     />
     <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
 
     <!-- Vendors CSS -->
     <link
@@ -452,12 +453,16 @@
               <div class="card">
                 <div class="d-flex justify-content-between">
                   <div class="card-header">
-                    <input
-                      class="form-control"
-                      type="search"
-                      value="Search ..."
-                      id="html5-search-input"
-                    />
+                    <select
+                      id="selectType"
+                      class="selectpicker w-100"
+                      data-style="btn-default"
+                    >
+                      <option value="">Select Faculty</option>
+                      <option value="text">Text</option>
+                      <option value="link">Link</option>
+                      <option value="file">File</option>
+                    </select>
                   </div>
                   <div class="card-header">
                     <input
@@ -710,7 +715,8 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+    <script src="../../assets/js/forms-selects.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
